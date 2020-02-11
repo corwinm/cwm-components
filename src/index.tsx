@@ -8,16 +8,20 @@ import styles from './styles.css'
 
 export type Props = { text: string }
 
-export default class ExampleComponent extends React.Component<Props> {
-  render() {
-    const {
-      text
-    } = this.props
+const ExampleComponent: React.FC<Props> = props => {
+  const {
+    text
+  } = props
 
-    return (
-      <div className={styles.test}>
-        Example Component: {text}
-      </div>
-    )
-  }
+  const [counter, setCounter] = React.useState(0)
+
+  return (
+    <div className={styles.test}>
+      Example Component: {text}
+      <button onClick={() => setCounter(counter + 1)}>Click!</button>
+      {counter}
+    </div>
+  )
 }
+
+export default ExampleComponent
