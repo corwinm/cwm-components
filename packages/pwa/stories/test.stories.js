@@ -6,6 +6,6 @@ export default {
   component: Test
 };
 
-export const Text = () => <Test />;
+export const Text = () => <Test text="Test"/>;
 
-export const Second = () => <Test />;
+export const Second = () => <Test text="Second"/>;
