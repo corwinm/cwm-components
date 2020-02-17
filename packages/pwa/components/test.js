@@ -1,9 +1,5 @@
-import React from 'react'
+import React from "react";
 
 export const Test = ({ text }) => {
-  return (
-    <div>
-      {text}
-    </div>
-  )
-}
+  return <div>{text}</div>;
+};
