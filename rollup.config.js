@@ -5,26 +5,23 @@ import external from "rollup-plugin-peer-deps-external";
 import postcss from "rollup-plugin-postcss";
 import resolve from "@rollup/plugin-node-resolve";
 import url from "rollup-plugin-url";
-import { uglify } from "rollup-plugin-uglify";
 import svgr from "@svgr/rollup";
 
-import pkg from "./package.json";
+const pkg = require("./package.json");
 
-export default (input, packageMain, packageModule) => ({
-  input: input || "index.ts",
+export default {
+  input: "index.ts",
   output: [
     {
-      file: packageMain || pkg.main,
+      file: pkg.main,
       format: "cjs",
       exports: "named",
-      // plugins: [uglify()],
       sourcemap: true
     },
     {
-      file: packageModule || pkg.module,
+      file: pkg.module,
       format: "es",
       exports: "named",
-      // plugins: [uglify()],
       sourcemap: true
     }
   ],
@@ -42,4 +39,4 @@ export default (input, packageMain, packageModule) => ({
     }),
     commonjs()
   ]
-});
+};

@@ -8,3 +8,5 @@ type TestProps = {
 export const Test: React.FC<TestProps> = ({ text }) => {
   return <div>{text} {TestMessage()}</div>;
 };
+
+export default Test;

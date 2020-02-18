@@ -1,4 +1,3 @@
-import * as config from "../../rollup.config";
-import pkg from "./package.json";
+import config from "../../rollup.config";
 
-export default config.default("index.ts", pkg.main, pkg.module);
+export default config;
