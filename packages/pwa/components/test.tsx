@@ -1,14 +1,14 @@
 import React from "react";
 import { TestMessage } from "cwm-components-core";
 
-export type TestProps = {
+type TestProps = {
   text: String;
 };
 
 /**
  * This is the code description.
  */
-export const Test: React.FC<TestProps> = ({ text }: TestProps) => {
+const Test: React.FC<TestProps> = ({ text }: TestProps) => {
   return (
     <div>
       {text} {TestMessage()}
