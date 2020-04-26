@@ -1,0 +1,20 @@
+import { Meta, Preview, Story, Props, Description } from "@storybook/addon-docs/blocks";
+import Test from "../packages/pwa/components/test";
+
+<Meta title="PWA|1: Thing" />
+
+# Thing
+
+With `MDX` we can define a story for `Thing` right in the middle of our
+markdown documentation.
+
+<Description of={Test}/>
+
+<Preview>
+  <Test />
+  {/* <Story name="testing">
+    <Test />
+  </Story> */}
+</Preview>
+
+<Props of={Test} />

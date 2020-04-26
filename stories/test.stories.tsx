@@ -1,9 +1,8 @@
 import React from "react";
-// import { Test } from "cwm-components-pwa";
-import { Test } from "../components/test";
+import Test from "../packages/pwa/components/test";
 
 export default {
-  title: "Test",
+  title: "PWA|2: Components/Test",
   component: Test,
 };
 
