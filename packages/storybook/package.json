@@ -1,0 +1,32 @@
+{
+  "name": "storybook",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "private": true,
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "storybook": "start-storybook -p 6006",
+    "build": "build-storybook"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@babel/core": "^7.9.0",
+    "@storybook/addon-actions": "^5.3.18",
+    "@storybook/addon-docs": "^5.3.18",
+    "@storybook/addon-info": "^5.3.18",
+    "@storybook/addon-links": "^5.3.18",
+    "@storybook/addons": "^5.3.18",
+    "@storybook/preset-typescript": "^3.0.0",
+    "@storybook/react": "^5.3.18",
+    "babel-loader": "^8.1.0",
+    "cwm-components-core": "^1.0.0",
+    "cwm-components-pwa": "^1.0.0",
+    "fork-ts-checker-webpack-plugin": "^4.1.3",
+    "react-docgen-typescript-loader": "^3.7.2",
+    "ts-loader": "^7.0.1",
+    "typescript": "^3.8.3"
+  }
+}

@@ -1,21 +1,15 @@
 {
   "compilerOptions": {
-    "outDir": "build",
-    "module": "esnext",
+    "outDir": "build/lib",
+    "module": "commonjs",
     "target": "es5",
-    "lib": [
-      "es5",
-      "es6",
-      "es7",
-      "es2017",
-      "dom"
-    ],
+    "lib": ["es5", "es6", "es7", "es2017", "dom"],
     "sourceMap": true,
     "allowJs": false,
-    "allowSyntheticDefaultImports": true,
     "jsx": "react",
-    "declaration": true,
     "moduleResolution": "node",
+    "rootDirs": ["storybook", "components"],
+    "baseUrl": "src",
     "forceConsistentCasingInFileNames": true,
     "noImplicitReturns": true,
     "noImplicitThis": true,
@@ -23,16 +17,11 @@
     "strictNullChecks": true,
     "suppressImplicitAnyIndexErrors": true,
     "noUnusedLocals": true,
+    "declaration": true,
+    "allowSyntheticDefaultImports": true,
     "experimentalDecorators": true,
     "emitDecoratorMetadata": true
   },
-  "include": [
-    "packages"
-  ],
-  "exclude": [
-    "**/node_modules",
-    "**/build",
-    "**/dist",
-    "**/rollup.config.js"
-  ]
-}
+  "include": ["stories", "components"],
+  "exclude": ["node_modules", "build", "scripts"]
+  }
